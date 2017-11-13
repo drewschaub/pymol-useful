@@ -1,0 +1,33 @@
+# simple test: change background color of PyMOL window
+bg white 
+
+# Line Settings
+set line_width, 2
+
+# Ribbon settings
+set ribbon_radius, .2
+set ribbon_width, 2
+set ribbon_sampling, 1
+
+# Cartoon Settings
+set cartoon_fancy_helices, 1
+set cartoon_smooth_loop, 0
+color forest, ss h
+color density, ss s
+color white, ss l+
+
+# Solvent settings - show solvent as small cyan colored spheres
+color cyan, solvent
+hide lines, solvent
+show spheres, solvent
+set sphere_scale, 0.125
+
+# Ray Trace Settings
+set antialias, 2
+set ray_trace_mode, 1
+set ray_trace_color, 0x000000
+set ray_trace_fog, 0
+set ray_opaque_background, 0
+
+# Speeds up rendering by increasing memory allowance
+set hash_max=200
