@@ -13,7 +13,7 @@ set ray_shadows, 0
 set ray_trace_mode, 1
 set specular, 0.5
 set specular_power, 100
-set ambient, 0.2
+set ambient, 0.333
 set direct, 0.8
 set reflect, 0.1
 
