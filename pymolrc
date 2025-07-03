@@ -9,7 +9,7 @@ hide everything
 show surface
 
 # 2) Lighting & shadows
-set antialias, 3
+set antialias, 2  # 2×2 sampling
 set ray_shadows, 0
 set ray_trace_mode, 1
 set specular, 0.5
