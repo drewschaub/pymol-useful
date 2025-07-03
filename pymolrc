@@ -6,7 +6,6 @@ set orthoscopic, 1
 set ray_opaque_background, 0
 set ray_trace_fog, 0
 hide everything
-show surface
 
 # 2) Lighting & shadows
 set antialias, 2  # 2×2 sampling
