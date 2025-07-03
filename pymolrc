@@ -21,7 +21,7 @@ set reflect, 0.1
 show cartoon
 set cartoon_fancy_helices, 1
 set cartoon_smooth_loops, 0
-set cartoon_sampling, 10
+set cartoon_sampling, 30
 set cartoon_tube_radius, 0.3
 set cartoon_tube_quality, 15
 set cartoon_side_chain_helper, 1
