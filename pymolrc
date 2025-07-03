@@ -25,9 +25,6 @@ set cartoon_sampling, 10
 set cartoon_tube_radius, 0.3
 set cartoon_tube_quality, 15
 set cartoon_side_chain_helper, 1
-color forest, ss h
-color density, ss s
-color white, ss l+
 
 # 4) Stick & sphere styles
 set stick_radius, 0.15, hetatm
@@ -45,3 +42,20 @@ set ribbon_sampling, 1
 # 6) Surface styles
 set surface_quality, 1
 set transparency, 0.85
+
+# 7) custom and favorite colors
+color white, ss l+
+
+### define custom colors ###
+set_color pubBlue,   [0.0,  0.45, 0.70]   # deep-ish blue
+set_color pubOrange, [0.90, 0.60, 0.00]   # muted orange
+set_color pubTeal,   [0.20, 0.60, 0.60]   # medium teal
+set_color pubCoral,  [0.90, 0.40, 0.40]   # soft coral
+
+### apply Blue & Orange ###
+color pubBlue,   ss h   # helices
+color pubOrange, ss s   # sheets
+
+### OR apply Teal & Coral ###
+# color pubTeal,   ss h
+# color pubCoral,  ss s
