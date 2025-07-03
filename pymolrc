@@ -19,12 +19,11 @@ set cartoon_fancy_helices, 1
 set cartoon_sampling, 14
 set cartoon_gap_cutoff, 0
 set cartoon_tube_radius, 0.3
-set cartoon_tube_quality, 15
 set cartoon_side_chain_helper, 1
 
 # 4) Stick & sphere styles
+set valence, 0
 set stick_radius, 0.15, hetatm
-set stick_quality, 10
 show sticks, hetatm
 color cyan, solvent
 set sphere_scale, 0.125
@@ -36,7 +35,6 @@ set ribbon_width, 2
 set ribbon_sampling, 1
 
 # 6) Surface styles
-set surface_quality, 1
 set transparency, 0.85
 
 # 7) custom and favorite colors
