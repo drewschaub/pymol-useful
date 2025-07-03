@@ -1,33 +1,48 @@
-# simple test: change background color of PyMOL window
-bg white 
+# ~/.pymolrc — publication defaults
 
-# Line Settings
-set line_width, 2
+# 1) Base settings
+bg white
+set orthoscopic, 1
+set ray_opaque_background, 0
+set ray_trace_fog, 0
+hide everything
+show surface
 
-# Ribbon settings
-set ribbon_radius, .2
-set ribbon_width, 2
-set ribbon_sampling, 1
+# 2) Lighting & shadows
+set antialias, 3
+set ray_shadows, 0
+set ray_trace_mode, 1
+set specular, 0.5
+set specular_power, 100
+set ambient, 0.2
+set direct, 0.8
+set reflect, 0.1
 
-# Cartoon Settings
+# 3) Cartoon styles
+show cartoon
 set cartoon_fancy_helices, 1
-set cartoon_smooth_loop, 0
+set cartoon_smooth_loops, 0
+set cartoon_sampling, 10
+set cartoon_tube_radius, 0.3
+set cartoon_tube_quality, 15
+set cartoon_side_chain_helper, 1
 color forest, ss h
 color density, ss s
 color white, ss l+
 
-# Solvent settings - show solvent as small cyan colored spheres
+# 4) Stick & sphere styles
+set stick_radius, 0.15, hetatm
+set stick_quality, 20, hetatm
+show sticks, hetatm
 color cyan, solvent
-hide lines, solvent
-show spheres, solvent
 set sphere_scale, 0.125
+hide everything, solvent
 
-# Ray Trace Settings
-set antialias, 2
-set ray_trace_mode, 1
-set ray_trace_color, 0x000000
-set ray_trace_fog, 0
-set ray_opaque_background, 0
+# 5) Ribbon styles
+set ribbon_radius, .2
+set ribbon_width, 2
+set ribbon_sampling, 1
 
-# Speeds up rendering by increasing memory allowance
-set hash_max=200
+# 6) Surface styles
+set surface_quality, 1
+set transparency, 0.85
