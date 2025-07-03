@@ -11,24 +11,19 @@ hide everything
 set antialias, 2  # 2×2 sampling
 set ray_shadows, 0
 set ray_trace_mode, 1
-set specular, 0.5
-set specular_power, 100
 set ambient, 0.333
-set direct, 0.8
-set reflect, 0.1
 
 # 3) Cartoon styles
 show cartoon
 set cartoon_fancy_helices, 1
-set cartoon_smooth_loops, 0
-set cartoon_sampling, 30
+set cartoon_sampling, 5 # default is 1
 set cartoon_tube_radius, 0.3
 set cartoon_tube_quality, 15
 set cartoon_side_chain_helper, 1
 
 # 4) Stick & sphere styles
 set stick_radius, 0.15, hetatm
-set stick_quality, 20, hetatm
+set stick_quality, 10
 show sticks, hetatm
 color cyan, solvent
 set sphere_scale, 0.125
