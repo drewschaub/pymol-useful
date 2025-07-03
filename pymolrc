@@ -16,7 +16,8 @@ set ambient, 0.333
 # 3) Cartoon styles
 show cartoon
 set cartoon_fancy_helices, 1
-set cartoon_sampling, 5 # default is 1
+set cartoon_sampling, 14
+set cartoon_gap_cutoff, 0
 set cartoon_tube_radius, 0.3
 set cartoon_tube_quality, 15
 set cartoon_side_chain_helper, 1
